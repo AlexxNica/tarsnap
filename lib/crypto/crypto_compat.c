@@ -158,7 +158,7 @@ crypto_compat_RSA_generate_key()
 {
 	RSA * key;
 
-#if OPENSSL_VERSION_NUMBER < 0x10100000L
+#if OPENSSL_VERSION_NUMBER < 0x00908000L
 	/* Generate key. */
 	if ((key = RSA_generate_key(2048, 65537, NULL, NULL)) == NULL) {
 		warn0("%s", ERR_error_string(ERR_get_error(), NULL));
