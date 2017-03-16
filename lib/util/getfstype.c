@@ -62,7 +62,7 @@
 struct ftyperec {
 	unsigned int f_type;
 	const char * typename;
-} ftypes[] = {
+} static ftypes[] = {
 #ifdef ADFS_SUPER_MAGIC
 	{ADFS_SUPER_MAGIC, "adfs"},
 #endif
